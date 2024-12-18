@@ -1,5 +1,0 @@
-RewriteEngine On
-# Controleer of de URL geen www bevat
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-# Voeg www toe aan de URL
-RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
